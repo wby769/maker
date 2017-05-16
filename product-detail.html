@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>一日游详情</title>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/maker-style1.css">
+	<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="js/swiper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_gikmk6bkvuz0k9.css">
+</head>
+<style>
+    .weui-cells{
+        margin-top:0;
+    }
+    .weui-cells:before,.weui-cell:before{
+        border-top:none !important;
+    }
+    .weui-cells:after{
+        border-bottom:none !important;
+    }
+    .weui-cell__bd p{
+        color:#999;
+        font-size:14px;
+    }
+    .weui-cell__ft{
+        color:#333;
+        font-size:14px;
+    }
+</style>
+<body>
+	<div class="divBox">
+		<!-- head -->
+		<div class="head-box">
+			<a href="javascript:history.back()" title="">
+				<i class="iconfont icon-l"></i>
+			</a>
+			<span>一日游详情</span>
+		</div>
+		<!-- banner -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="imgs/l1.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/l0.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/l3.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/l2.jpg">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <a href="#" class="fx-btn">
+                <i class="iconfont icon-fx"></i>
+            </a>
+        </div>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                touchRatio : 0.5,
+                loop:true,
+                speed:1000,
+                autoplay: 3000,
+                autoplayDisableOnInteraction: false
+            });
+        </script>
+        <!-- 标题 -->
+        <div class="dateil-title box">
+            <h1>车+导体验北海刺激上游</h1>
+            <P>2017-12-30</P>
+            <span>￥120/天</span>
+        </div>
+        <!--服务时间 三餐-->
+        <div class="weui-cells">
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__bd">
+                    <p>服务时间</p>
+                </div>
+                <div class="weui-cell__ft">
+                    <span>1月15日</span>
+                </div>
+            </a>
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__bd">
+                    <p>三餐</p>
+                </div>
+                <div class="weui-cell__ft">自费三餐</div>
+            </a>
+        </div>
+        <!--详细信息-->
+        <div class="xx-info-box box">
+            <!--小标题-->
+            <h1 class="info-title">
+                <span class="circle"></span>基础信息
+                <a class="edit">编辑修改</a>
+            </h1>
+            <!--内容-->
+            <div class="xx-info-content">
+                <div class="weui-cells">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>商品名称</p>
+                        </div>
+                        <div class="weui-cell__ft odd-ellipsis">车+导体验北海刺激海上游</div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>出行方式</p>
+                        </div>
+                        <div class="weui-cell__ft">随车</div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>线路分类</p>
+                        </div>
+                        <div class="weui-cell__ft">热销</div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>服务城市</p>
+                        </div>
+                        <div class="weui-cell__ft">广西 北海</div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>服务时间</p>
+                        </div>
+                        <div class="weui-cell__ft">工作日</div>
+                    </div>
+                    <!--<div class="weui-cells__title">预订须知</div>-->
+                    <!--<p class="car-text">-->
+                        <!--团队旅游度假产品，以酒店+交通+特色餐食+景点门票+旅游用车+全程导游+签证（海外）为核心。对行程、交通方式、-->
+                        <!--食宿标准、游览项目均有固定安排，且有专职导游和专车带您游览经典景点。该类产品对成团人数有一点的要求。-->
+                    <!--</p>-->
+                </div>
+            </div>
+        </div>
+        <!--行程信息-->
+        <div class="xx-info-box box">
+            <!--小标题-->
+            <h1 class="info-title">
+                <span class="circle"></span>行程信息
+                <a class="edit">编辑修改</a>
+            </h1>
+            <p class="tt">行程描述</p>
+            <p class="content">呀诺达是北纬18度真正没有冬天的热带雨林景区，这里茂密雨林遮天蔽日，流泉叠瀑倾泻而下，在雨林深处的观景台可眺望海棠湾、蜈支洲
+                岛和南湾猴岛。这里年平均温度24度，凉意永在。雨林谷内生长着大量的原始森林和次森林，百年古藤、千年古蕨、巨大灵芝、“冷血杀手
+                ”见血封喉等热带雨林的六大奇观让人惊叹不已。古蕨、巨大灵芝、“冷血杀手”见血封喉等热带雨林的六大奇观让人惊叹不已。</p>
+            <div class="left xx-img">
+                <img src="imgs/tu.jpg" alt="">
+            </div>
+            <div class="left xx-img">
+                <img src="imgs/tu.jpg" alt="">
+            </div>
+        </div>
+        <!--关联信息-->
+        <div class="xx-info-box box">
+            <!--小标题-->
+            <h1 class="info-title">
+                <span class="circle"></span>关联景区
+                <a class="edit">关联景区</a>
+            </h1>
+            <p class="tt-gl">
+                <img src="imgs/gl.png" alt=""> 夫子庙
+            </p>
+            <p class="content">呀诺达是北纬18度真正没有冬天的热带雨林景区，这里茂密雨林遮天蔽日，流泉叠瀑倾泻而下，在雨林深处的观景台可眺望海棠湾、蜈支洲
+                岛和南湾猴岛。这里年平均温度24度，凉意永在。雨林谷内生长着大量的原始森林和次森林，百年古藤、千年古蕨、巨大灵芝、“冷血杀手
+                ”见血封喉等热带雨林的六大奇观让人惊叹不已。古蕨、巨大灵芝、“冷血杀手”见血封喉等热带雨林的六大奇观让人惊叹不已。</p>
+            <div class="left xx-img">
+                <img src="imgs/tu.jpg" alt="">
+            </div>
+            <div class="left xx-img">
+                <img src="imgs/tu.jpg" alt="">
+            </div>
+
+            <p class="tt-gl">
+                <img src="imgs/gl.png" alt=""> 明孝陵
+            </p>
+            <p class="content">呀诺达是北纬18度真正没有冬天的热带雨林景区，这里茂密雨林遮天蔽日，流泉叠瀑倾泻而下，在雨林深处的观景台可眺望海棠湾、蜈支洲
+                岛和南湾猴岛。这里年平均温度24度，凉意永在。雨林谷内生长着大量的原始森林和次森林，百年古藤、千年古蕨、巨大灵芝、“冷血杀手
+                ”见血封喉等热带雨林的六大奇观让人惊叹不已。古蕨、巨大灵芝、“冷血杀手”见血封喉等热带雨林的六大奇观让人惊叹不已。</p>
+            <div class="left xx-img">
+                <img src="imgs/tu.jpg" alt="">
+            </div>
+            <div class="left xx-img">
+                <img src="imgs/tu.jpg" alt="">
+            </div>
+        </div>
+        <!--备注说明-->
+        <div class="xx-info-box box">
+            <!--小标题-->
+            <h1 class="info-title">
+                <span class="circle"></span>备注说明
+                <a class="edit">编辑修改</a>
+            </h1>
+            <div class="beizhu-box">
+                <p class="tt">备注说明</p>
+                <p class="content">本行程为我社委托当地旅行社散客拼团线路，在保证承诺的服务内容和标准不变的前提下，会与其他旅行社的客人
+                    拼成一个团，统一安排行程。</p>
+                <p class="content">团队中可能会有入住不同酒店的其他携程团友一同出行，如涉及不同酒店客人的接送事宜，当地司导人员会根据团队实际情况进行合理安
+                    排，敬请理解、配合，谢谢。</p>
+            </div>
+            <div class="beizhu-box">
+                <p class="tt">预订须知</p>
+                <p class="content">报价是按照2成人入住1间房计算的价格，本产品不接受拼房,如您的订单产生单房，请在预订时选择单房差，
+                    携程将向您收取相应的费用。由于12岁以下儿童费用为不占床、不含早餐之报价，若儿童需占床含早，请在预订时选择单房差。</p>
+            </div>
+        </div>
+        <!--按钮-->
+        <div class="btn-box box">
+            <a href="#" class="weui-btn weui-btn_primary">下架产品</a>
+            <a href="javascript:;" class="weui-btn weui-btn_primary" id="showDialog">上架飞猪</a>
+        </div>
+	</div>
+    <!-- 弹框 -->
+    <div class="js_dialog carDialog none" style="opacity:0;">
+        <div class="weui-mask none"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__bd">
+                <i class="weui-icon-success weui-icon_msg"></i>
+                <P class="Dialog-title">您的产品已成功上架飞猪！</P>
+            </div>
+            <div class="weui-dialog__ft">
+                <a href="index.html" class="weui-dialog__btn weui-dialog__btn_primary">我已知道</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            // 弹框
+            $("#showDialog").click(function(){
+                $(".weui-mask").show();
+                $(".js_dialog").css("opacity","1").show();
+            })
+            $(".weui-dialog__btn").click(function(){
+                $(".weui-mask").hide();
+                $(".js_dialog").css("opacity","0").hide();
+            })
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

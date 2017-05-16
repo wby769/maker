@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>创客-登录</title>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/maker-style.css">
+	<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_xmyq4sv8vwa02j4i.css">
+</head>
+<body>
+	<div class="divBox">
+		<!-- 登录背景 -->
+		<div class="loginImg-Wrap">
+			<img src="imgs/logo.png" alt="">
+			<!-- 菜单标题 -->
+			<div class="nav-title">
+				<span class="nav-active">个人登录</span>
+				<span>企业登录</span>
+			</div>
+		</div>
+		<!-- 登录内容 -->
+        <div class="weui-cells weui-cells_form loginWrap">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label login-label">
+                    	<i class="iconfont icon-geren"></i>
+                    </label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请输入账号">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label login-label">
+                    	<i class="iconfont icon-mima"></i>
+                    </label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="password" placeholder="请输入密码">
+                </div>
+            </div>
+        </div>
+        <!-- 注册 忘记密码 -->
+		<div class="item-box">
+			<span><a href="register1.html" title="">注册</a></span>
+			<span><a href="password.html" title="">忘记密码</a></span>
+		</div>
+		<!-- 按钮 -->
+        <div class="sel-btn">
+            <a href="index.html" class="weui-btn weui-btn_primary">登录</a>
+        </div>
+        <!-- 技术支持 -->
+        <P class="btm">技术支持：浙江溜溜云集团</P>
+	</div>
+</body>
+<script>
+	$(".nav-title").find("span").click(function(){
+	    $(this).addClass("nav-active").siblings().removeClass("nav-active");
+	})
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

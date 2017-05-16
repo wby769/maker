@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>车+导详情</title>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/maker-style1.css">
+	<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="js/swiper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_gikmk6bkvuz0k9.css">
+</head>
+<style>
+    .weui-cells{
+        margin-top:0;
+    }
+    .weui-cells:before,.weui-cell:before{
+        border-top:none !important;
+    }
+    .weui-cells:after{
+        border-bottom:none !important;
+    }
+    .weui-cell__bd p{
+        color:#999;
+        font-size:14px;
+    }
+    .weui-cell__ft{
+        color:#333;
+        font-size:14px;
+    }
+</style>
+
+<script>
+    (function($) {
+        $.extend({
+            urlGet:function()
+            {
+                var aQuery = window.location.href.split("?");  //取得Get参数
+                var aGET = new Array();
+                if(aQuery.length > 1)
+                {
+                    var aBuf = aQuery[1].split("&");
+                    for(var i=0, iLoop = aBuf.length; i<iLoop; i++)
+                    {
+                        var aTmp = aBuf[i].split("=");  //分离key与Value
+                        aGET[aTmp[0]] = aTmp[1];
+                    }
+                }
+                return aGET;
+            }
+        })
+    })(jQuery);
+    $(function () {
+        var GET = $.urlGet(); //获取URL的Get参数
+        var id = parseInt(GET['id']); //取得id的值
+        var url = "/rent/chejdao/get_profile?id="+id;
+        $.get(url,null,function(data){
+            data = JSON.parse(data);
+            console.log(data);
+            $('#thumb1 img').attr('src', data.thumb);
+            $('#avatar').attr('src', data.thumb);
+            $('#thumb2 img').attr('src', data.thumb_2);
+            $('.dateil-title h1, #title').text(data.title);
+            $('.dateil-title p').text(data.service_time);
+            $('.dateil-title span').text(data.price_str);
+            $('#car_type').html('<i class="iconfont icon-qc"></i>'+data.car_type);
+            $('#brand').html('<i class="iconfont icon-zs"></i>'+data.brand);
+            $('#seat').html('<i class="iconfont icon-cz"></i>车载'+data.seat+'人');
+            $('#luggage').html('<i class="iconfont icon-xl"></i>车载'+data.luggage);
+            $('#working_life').html(data.working_life+'年');
+            $('#driving_life').html(data.driving_life+'年');
+            $("#service_city").html(data.service_city);
+            $("#remark").html(data.remark);
+            $("#self_evaluation").html(data.self_evaluation);
+            $("#photos").html("<img src='"+data.thumb+"' class='photos' /> <img src='"+data.thumb_2+"' class='photos' />");
+            $("#title").text(data.title);
+            $('#service_time').text(data.service_time);
+            $('#three_meals').text(data.three_meals);
+        });
+    });
+</script>
+<body>
+	<div class="divBox">
+		<!-- head -->
+		<div class="head-box">
+			<a href="javascript:history.back()" title="">
+				<i class="iconfont icon-l"></i>
+			</a>
+			<span>车+导详情</span>
+		</div>
+		<!-- banner -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="thumb1">
+                    <img src="imgs/c-ban1.jpg">
+                </div>
+                <div class="swiper-slide" id="thumb2">
+                    <img src="imgs/c-ban2.jpg">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <a href="#" class="fx-btn">
+                <i class="iconfont icon-fx"></i>
+            </a>
+        </div>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                touchRatio : 0.5,
+                loop:true,
+                speed:1000,
+                autoplay: 3000,
+                autoplayDisableOnInteraction: false
+            });
+        </script>
+        <!-- 标题 -->
+        <div class="dateil-title box">
+            <h1 class="odd-ellipsis"></h1>
+            <P></P>
+            <span>￥120/天</span>
+        </div>
+        <!--车辆信息-->
+        <div class="car-info-box box">
+            <!--小标题-->
+            <h1 class="info-title">
+                <span class="circle"></span>车辆信息
+                <a class="edit">编辑修改</a>
+            </h1>
+            <!-- 内容 -->
+            <div class="car-info-content box">
+                <!--<a href="">-->
+                    <div class="left car-info-content-l">
+                        <ul>
+                            <li id="car_type">
+                                <i class="iconfont icon-qc"></i>小型自动挡汽车
+                            </li>
+                            <li id="brand">
+                                <i class="iconfont icon-zs"></i>奥迪轿车
+                            </li>
+                            <li id="seat">
+                                <i class="iconfont icon-cz"></i>车载4人
+                            </li>
+                            <li id="luggage">
+                                <i class="iconfont icon-xl"></i>车载行李
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right car-info-content-r">
+                        <img id="avatar" src="imgs/car.jpg" alt="">
+                        <!--<i class="iconfont icon-r"></i>-->
+                    </div>
+                <!--</a>-->
+            </div>
+        </div>
+        <!--详细信息-->
+        <div class="xx-info-box box">
+            <!--小标题-->
+            <h1 class="info-title">
+                <span class="circle"></span>详细信息
+                <a class="edit">编辑修改</a>
+            </h1>
+            <!--内容-->
+            <div class="xx-info-content">
+                <div class="weui-cells">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>商品名称</p>
+                        </div>
+                        <div class="weui-cell__ft odd-ellipsis" id="title">车+导体验北海刺激海上游</div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>工作年限</p>
+                        </div>
+                        <div class="weui-cell__ft" id="working_life">10年</div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>驾龄</p>
+                        </div>
+                        <div class="weui-cell__ft" id="driving_life">8年6个月</div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>服务城市</p>
+                        </div>
+                        <div class="weui-cell__ft" id="service_city">广西 北海</div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>服务时间</p>
+                        </div>
+                        <div class="weui-cell__ft" id="service_time">工作日</div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd" >
+                            <p>三餐</p>
+                        </div>
+                        <div class="weui-cell__ft" id="three_meals">自费三餐</div>
+                    </div>
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__bd">
+                            <p>相册</p>
+                        </div>
+                        <div class="weui-cell__ft" id="photos">
+                            <img src="imgs/car1.jpg" alt="" class="photos">
+                        </div>
+                    </a>
+                    <div class="weui-cells__title" >自我评价</div>
+                    <p class="car-text" id="self_evaluation">
+                        具有丰富的旅游-行业工作经验，有较强的沟通交际能力和市场开发能力，能开拓并管理好销售渠道和客户资源善于
+                        沟通、协调有较强的组织能力与团队精神。性格开朗、稳重、有活力，待人热情、真诚，工作认真负责，积极主动，
+                        能吃苦耐劳，勇于承受压力，敢于创新。
+                    </p>
+                    <div class="weui-cells__title">预订须知</div>
+                    <p class="car-text" id="remark">
+                        团队旅游度假产品，以酒店+交通+特色餐食+景点门票+旅游用车+全程导游+签证（海外）为核心。对行程、交通方式、
+                        食宿标准、游览项目均有固定安排，且有专职导游和专车带您游览经典景点。该类产品对成团人数有一点的要求。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--按钮-->
+        <div class="btn-box box">
+            <a href="#" class="weui-btn weui-btn_primary">下架产品</a>
+            <a href="#" class="weui-btn weui-btn_primary" id="showDialog">上架飞猪</a>
+        </div>
+	</div>
+    <!-- 弹框 -->
+    <div class="js_dialog carDialog none" style="opacity:0;">
+        <div class="weui-mask none"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__bd">
+                <i class="weui-icon-success weui-icon_msg"></i>
+                <P class="Dialog-title">您的产品已成功上架飞猪！</P>
+            </div>
+            <div class="weui-dialog__ft">
+                <a href="index.html" class="weui-dialog__btn weui-dialog__btn_primary">我已知道</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            // 弹框
+            $("#showDialog").click(function(){
+                $(".weui-mask").show();
+                $(".js_dialog").css("opacity","1").show();
+            })
+            $(".weui-dialog__btn").click(function(){
+                $(".weui-mask").hide();
+                $(".js_dialog").css("opacity","0").hide();
+            })
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

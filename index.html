@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>创客-首页</title>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/maker-style.css">
+	<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<script src="js/swiper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_8hbl1awuh1960f6r.css">
+</head>
+<body>
+	<div class="divBox indexWrap">
+		<!-- head -->
+		<div class="head-box">
+			<a href="javascript:;">
+				<i class="iconfont icon-dingwei"></i>
+				<span>北海</span>
+			</a>
+			<span>首页</span>
+			<span style="position:absolute;top:0;right:10px;font-size:14px;" id="login">登录</span>
+		</div>
+		<!-- banner轮播图 -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="imgs/banner1.png">
+				</div>
+				<div class="swiper-slide">
+					<img src="imgs/banner2.png">
+				</div>
+				<div class="swiper-slide">
+					<img src="imgs/banner3.png">
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<script>
+		    var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        paginationClickable: true,
+		        touchRatio : 0.5,
+		        loop:true,
+		        speed:1000,
+		        autoplay: 3000,
+		        autoplayDisableOnInteraction: false
+		    });
+    	</script>
+    	<!-- 菜单 -->
+    	<div class="navWrap">
+			<div class="nav-top box">
+    			<a href="product1.html" title="">
+    				<p class="title-l1">旅游</p>
+    				<p class="title-l2">边玩边挣钱</p>
+    				<img src="imgs/nav1.jpg" alt="">
+    				<div class="title-r">
+    					<h1>一日游</h1>
+    					<p>亲切热情 体贴周到 讲解生动</p>
+    				</div>
+    			</a>
+			</div>
+			<div class="nav-item" style="margin-right:2%;">
+				<a href="car-guide1.html" title="">
+					<img src="imgs/nav2.jpg" class="nav2-img">
+					<div class="title-r">
+						<h1>车+导</h1>
+						<p>用心做导游 专心开好车</p>
+					</div>
+				</a>
+			</div>
+			<div class="nav-item">
+				<a href="techan.html" title="">
+					<img src="imgs/nav3.jpg" class="nav3-img">
+					<div class="title-r">
+						<h1>本地特产</h1>
+						<p>家有物品 生财有道</p>
+					</div>
+				</a>
+			</div>
+			<div class="nav-item" style="margin-right:2%;">
+				<a href="zulin.html" title="">
+					<img src="imgs/nav4.jpg" class="nav4-img">
+					<div class="title-r">
+						<h1>租赁</h1>
+						<p>闲置物品 生财有道</p>
+					</div>
+				</a>
+			</div>
+			<div class="nav-item">
+				<a href="tese.html" title="">
+					<img src="imgs/nav5.jpg" class="nav5-img">
+					<div class="title-r">
+						<h1>特色生活</h1>
+						<p>本地玩乐 生财有道</p>
+					</div>
+				</a>
+			</div>
+    	</div>
+    	<!-- 最新发布 -->
+    	<div class="new-box box">
+    		<!-- 标题 -->
+    		<div class="title">
+    			<span>最新发布</span>
+    		</div>
+    		<ul id="che-info">
+				<li>
+					<a href="product-detail.html" title="">
+						<div class="new-list-bg">
+							<img src="imgs/l1.jpg" alt="">
+						</div>
+						<div class="new-list-title box">
+							<h1>一日游 - 体验北海刺激海上游</h1>
+							<p>2017-12-30</p>
+							<span class="price">￥120/天</span>
+						</div>
+						<div class="sanjiao" style="background:#44a3f2;">已发布</div>
+					</a>
+				</li>
+				<li>
+					<a href="car-guide-detail.html" title="">
+						<div class="new-list-bg">
+							<img src="imgs/l0.jpg" alt="">
+						</div>
+						<div class="new-list-title box">
+							<h1>车+导 - 感受大自然丰富生活</h1>
+							<p>2017-12-30</p>
+							<span class="price">￥590/天</span>
+						</div>
+						<div class="sanjiao" style="background:#ff481a;">待审核</div>
+					</a>
+				</li>
+			</ul>
+    	</div>
+	</div>
+	<!-- footer -->
+	<div class="footer box">
+		<ul>
+			<li>
+				<a href="index.html" title="" class="foot-active">
+					<i class="iconfont icon-lxx"></i>
+					<p>产品</p>
+				</a>
+			</li>
+			<li>
+				<a href="order.html" title="">
+					<i class="iconfont icon-dingdan"></i>
+					<p>订单</p>
+				</a>
+			</li>
+			<li>
+				<a href="session.html" title="">
+					<i class="iconfont icon-xiaoxizhongxin"></i>
+					<p>会话</p>
+				</a>
+			</li>
+			<li>
+				<a href="user.html" title="">
+					<i class="iconfont icon-wode1"></i>
+					<p>我的</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+	$("#login").click(function(){
+//		window.location.href="/?chk=1";
+		window.location.href="login.html";
+	})
+</script>
+</body>
+<script type="text/javascript">
+	$(function get_che_info() {
+        var url = "/rent/chejdao/get_che_info";
+        $.get(url,null,function(data){
+            data = JSON.parse(data);
+            if(data.status == 1) {
+                $('#che-info').html(data.msg);
+            } else {
+                $('#che-info').html(data.msg);
+            }
+        });
+    });
+
+    $.get( "/admin/index/get_login_info",null,function(data){
+        data = JSON.parse(data);
+        if(data.admin_user_id>0) {
+            $('#login').html(data.admin_realname+',你好');
+        }
+    });
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,567 @@
+/* 登录页开始 */
+/* 背景图片 */
+.loginImg-Wrap{
+	width:100%;
+	height:280px;
+	text-align: center;
+	position:relative;
+	margin-bottom:50px;
+	background:url("../imgs/login-bg.png") no-repeat center center;
+}
+.loginImg-Wrap img{
+	width:105px;
+	height:105px;
+	margin-top:15%;
+}
+/* 菜单标题 */
+.nav-title{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	text-align: center;
+}
+.nav-title span{
+	width:50%;
+	color:#fff;
+	font-size:16px;
+	line-height:34px;
+	float: left;
+}
+.nav-active{
+	border-bottom:2px solid #ffd410;
+}
+/* 登录内容 */
+.loginWrap{
+	background:#f5f5f5 !important;
+	width:94%;
+	margin:0 auto;
+}
+.loginWrap:after{
+	border-bottom:0 !important;
+}
+.loginWrap:before{
+	border:0 !important;
+}
+.loginWrap .weui-cell:before{
+	right: 15px;
+	border:0 !important;
+}
+.login-label{
+	width:40px;
+	text-align:center;
+}
+.login-label i{
+	font-size:24px;
+	color:#666;
+}
+.loginWrap .weui-cell__bd{
+	border-bottom: 1px solid #eee;
+    line-height: 32px;
+    padding-left: 30px;
+}
+/* 注册 忘记密码 */
+.item-box{
+	width:80%;
+	margin:20px auto;
+	overflow:hidden;
+
+}
+.item-box span{
+	float:left;
+	width:50%;
+	text-align:center;
+	font-size:16px;
+	display:inline-block;
+}
+.item-box span:first-child a{
+	color:#9ed99d;
+}
+.item-box span:last-child a{
+	color:#44a3f2;
+}
+/* 按钮样式 */
+.sel-btn{
+	width:94%;
+	margin:0 auto;
+}
+.weui-btn_primary{
+	background:#44a3f2;
+}
+.weui-btn_primary:not(.weui-btn_disabled):active{
+	background:#2783d0;
+}
+/* 技术支持 */
+.btm{
+	text-align: center;
+	font-size:12px;
+	color:#666;
+	margin-top:35px;
+}
+/* 登录页结束 */
+
+/* 注册页开始 */
+.registerWrap .head-box,
+.indexWrap .head-box{
+	width:100%;
+	height:44px;
+	text-align:center;
+	color:#fff;
+	background:#44a3f2;
+	position:relative;
+	font-size:20px;
+	line-height:44px;
+}
+.registerWrap .head-box i{
+	position:absolute;
+	top:0;
+	left:10px;
+	font-size:20px;
+	color:#fff;
+}
+/* 注册手机验证 */
+.registerWrap .loginWrap{
+	background:#fff !important;
+	padding:10px 0 15px;
+	margin-top:25px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	-o-border-radius:8px;
+	-ms-border-radius:8px;
+	border-radius:8px;
+}
+/* 验证码 */
+.registerWrap .vcodeWrap{
+	width:86%;
+	margin:30px auto;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	-o-border-radius:8px;
+	-ms-border-radius:8px;
+	border-radius:8px;
+	border:none;
+}
+.registerWrap .vcodeWrap:before{
+	border:none;
+}
+.registerWrap .vcodeWrap:after{
+	border:none;
+}
+.registerWrap .vcodeWrap input[type='button']{
+	background:#44a3f2;
+	color:#fff;
+	border:none;
+	outline:none;
+}
+.registerWrap .vcodeWrap button{
+	background:#44a3f2;
+	color:#fff;
+	border:none;
+	outline:none;
+}
+/* 同意会员协议 */
+.checkbox-inp{
+	width:86%;
+	margin:20px auto;
+	color:#666;
+	position: relative;
+}
+#checkbox-inp{
+	position: relative;
+	width:20px;
+	float:left;
+	margin:0;
+	height:17px;
+	top:5px;
+}
+.checkbox-inp span{
+	color:#44a3f2;
+}
+.checkbox-inp input{
+	visibility:hidden;
+}
+.checkbox-inp label{
+	position:absolute;
+	width:15px;
+	height:15px;
+	top:0;
+	left: 0;
+	background:#fff;
+	border:1px solid #ccc;
+}
+.checkbox-inp label:after{
+	content:"";
+	position:absolute;
+	width:11px;
+	height:5px;
+	background:transparent;
+	top:2px;
+	left:1px;
+	border:2px solid #ccc;
+	border-top:none;
+	border-right:none;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.checkbox-inp input:checked+label{
+	background: #44a3f2;
+	border:1px solid #44a3f2; 
+}
+.checkbox-inp input:checked+label:after{
+	background:transparent;
+	border:2px solid #fff;
+	border-top:none;
+	border-right:none;
+}
+/* 注册2内容 */
+.register-label{
+	width:70px;
+	color:#666;
+    text-align-last: justify;
+}
+.weui-cell_select .weui-select{
+	color: #999;
+	padding-left:0;
+}
+.textWrap:before{
+	border-top:none !important;
+	border-bottom:none !important;
+}
+.textWrap:after{
+	border-top:none !important;
+	border-bottom:none !important;
+}
+/* 注册页结束 */
+
+/* 注册3 人员类型开始 */
+.staff-box{
+	background:#fff;
+	width:80%;
+	margin:20px auto;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+	position:relative;
+	overflow:hidden;
+}
+.staff-box ul{
+	overflow:hidden;
+}
+.staff-box ul li{
+	width:50%;
+	height:70px;
+	line-height:70px;
+	color:#666;
+	font-size:16px;
+	float:left;
+	box-sizing:border-box;
+	padding-left:8%;
+}
+.staff-box ul li i{
+	vertical-align:middle;
+	font-size:22px;
+	margin-right:8%;
+}
+.staff-active{
+	background:#44a3f2;
+	color:#fff !important;
+}
+/* 注册3人员类型结束 */
+
+/* 首页开始 */
+.indexWrap{
+	margin-bottom:65px;
+}
+.indexWrap .head-box{
+	position:relative;
+}
+.indexWrap .head-box a{
+	color:#fff;
+	font-size:14px;
+	position:absolute;
+	top:0;
+	left:10px;
+}
+.indexWrap .head-box a i{
+	font-size:24px;
+	vertical-align:middle;
+}
+.indexWrap .head-box a span{
+	margin-left:-5px;
+}
+/* 轮播图 */
+.swiper-container{
+	width: 100%;
+	height:160px;
+}
+.swiper-container img{
+	width:100%;
+	height:100%;
+}
+/*改变分页器颜色*/
+.swiper-pagination-bullet{
+	background:#fff;
+	opacity:0.8;
+}
+.swiper-pagination-bullet-active{
+	background:#44a3f2;
+	opacity:1;
+}
+/* 菜单 */
+.navWrap{
+	position: relative;
+	overflow:hidden;
+	width:90%;
+	margin:20px auto;
+}
+.navWrap>div{
+	float: left;
+	margin-bottom:10px;
+	background:#fff;
+}
+.nav-top{
+	width:100%;
+	height:100px;
+	border:1px solid #ececec;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+	overflow:hidden;
+}
+.nav-top a{
+	color:#333;
+}
+.nav-top img{
+	width:50px;
+	height:95px;
+	margin-top: 5px;
+	margin-left:28%;
+}
+.title-l1,.title-l2{
+	position: absolute;
+}
+.title-l1{
+	top:15px;
+	left:3%;
+}
+.title-l2{
+	top:30px;
+	left:6%;
+}
+.title-r{
+	position: absolute;
+	top:40px;
+	right:5px;
+	text-align:center;
+	color:#333;
+}
+.title-r h1{
+	font-size:14px;
+}
+.nav-item{
+	width:48%;
+	height:90px;
+	border:1px solid #ececec;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+}
+.nav-item .title-r h1{
+	text-align:right;
+}
+.nav2-img{
+	width:85px;
+	height:55px;
+	margin-top:15px;
+	margin-left:5px;
+}
+.nav3-img{
+	width:56px;
+	height:65px;
+	margin-top:5px;
+	margin-left:10px;
+}
+.nav4-img{
+	width:85px;
+	height:55px;
+	margin-top:10px;
+	margin-left:5px;
+}
+.nav5-img{
+	width:60px;
+	height:60px;
+	margin-top:5px;
+	margin-left:10px;
+}
+/* 最新发布 */
+.new-box{
+	background:#fff;
+	overflow:hidden;
+	padding:15px;
+}
+.new-box .title{
+	font-size:16px;
+	color:#44a3f2;
+	margin-bottom:15px;
+}
+.new-box .title:before{
+	content:"";
+	width:5px;
+	height:5px;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	-ms-border-radius:50%;
+	border-radius:50%;
+	background:#44a3f2;
+	display:inline-block;
+	position:relative;
+	top:-3px;
+	margin-right:3px;
+}
+.new-box ul li{
+	margin-bottom:10px;
+	background:#f9f9f9;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+	height:160px;
+	width:100%;
+	overflow:hidden;
+	position:relative;
+}
+.new-box .new-list-bg{
+	height:110px;
+	overflow:hidden;
+}
+.new-box .new-list-bg img{
+	width:100%;
+	height:110px;
+}
+.new-box .new-list-title{
+	padding:5px 15px;
+	position:relative;
+}
+.new-box .new-list-title h1{
+	color:#333;
+	font-size:16px;
+	font-weight: normal;
+}
+.new-box .new-list-title p{
+	color:#666;
+	font-size:14px;
+	line-height:12px;	
+}
+.new-box .new-list-title .price{
+	color:#f58c0a;
+	font-size:18px;
+	position:absolute;
+	right:15px;
+	top:24px;
+}
+/* 三角 */
+.sanjiao{
+	position:absolute;
+	top:8px;
+	left:-17px;
+	width:68px;
+	height:18px;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+	color:#fff;
+	text-align:center;
+}
+/* 首页结束 */
+
+/* footer start */
+.footer{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	z-index:999;
+}
+.footer ul{
+	max-width:750px;
+	min-width:320px;
+	width:100%;
+	height:55px;
+	margin:0 auto;
+	box-sizing:border-box;
+	border-top:1px solid #f3f3f3;
+	background:#fff;
+}
+.footer ul li{
+	float:left;
+	width:25%;
+	height:55px;
+	text-align:center;
+	background:#fff;
+}
+.footer ul li i{
+	font-size:24px;
+}
+.footer ul li a{
+	color: #c0c0c0;
+}
+.footer ul li a p{
+	line-height:12px;
+}
+.foot-active{
+	color:#44a3f2 !important;
+}
+/* footer end */
+
+/* 屏幕适配 */
+@media screen and (max-width:360px){
+	/* 登录页 */
+	.loginImg-Wrap{
+		height: 240px;
+	}
+	/* 首页 */
+	.swiper-container{
+		height:140px;
+	}
+}
+
+@media screen and (min-width:360px){
+	/* 首页 */
+	.title-r{
+		right:20px;
+	}
+	.nav-item img{
+		margin-left:15px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
